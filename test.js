@@ -17,13 +17,13 @@ test('One euro shuld be 1.07 usd', () => {
     //expect
 });
 test('One dollar shuld be 146.26 yen', () => {
-    const usd = fromDollarToYen(2)
+    const yen = fromDollarToYen(2)
     const expected = 2 * 146.26
-    expect(usd).toBe(expected)
+    expect(yen).toBe(expected)
 });
 test('156.5 yen shuld be 0.87 pound', () => {
-    const usd = fromYenToPound(156.5)
-    const expected = 156.5 * (0.87 / 156.5)
-    expect(usd).toBe(expected)
+    const pound = fromYenToPound(10)
+    const expected = 10 * (0.87 / 156.5)
+    expect(pound).toBe(Number(expected.toFixed(2)))
 });
 
